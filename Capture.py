@@ -2,15 +2,17 @@ from subprocess import Popen
 from shutil import copyfile
 import time
 from os import listdir, remove
+from os.path import dirname
 from Packet import Packet
 from conf import INTERFACE
 
-CURRENT_CAPTURE_PATH = './captures/current'
-LIST_CAPTURES_PATH = './captures/list'
+here = dirname(__file__)
+CURRENT_CAPTURE_PATH = '{0}/captures/current'.format(here)
+LIST_CAPTURES_PATH = '{0}/captures/list'.format(here)
 
 class Capture:
 	
-	def __init__(self, name = ''):
+	def __init__(self, name = ''):		
 		self.proc = None
 		self.name = name
 		if name != '':
@@ -51,7 +53,7 @@ class Capture:
 		return len(self.packets)
 
 	def delete(self):
-		remove('{0}/{1}'.format(LIST_CAPTURES_PATH, self.name))
+		remove('{0},{1}'.format(LIST_CAPTURES_PATH, self.name))
 
 	@staticmethod
 	def get_list_captures():
