@@ -31,7 +31,7 @@ def stop_capture():
 
 @app.route('/<capture_name>', methods=['GET'])
 def show_capture(capture_name):
-	return render_template('show_capture.html')
+	return render_template('show_capture.html', capture = Capture(capture_name))
 
 if __name__ == '__main__':
     app.run(debug=DEBUG) 

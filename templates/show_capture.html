@@ -3,4 +3,8 @@
 
 <p>Here goes packets list...</p>
 
+{% for p in capture.packets %}
+    <li>{{p.src}} ---------- {{p.dst}}</li>
+{% endfor %}
+
 {% endblock %}

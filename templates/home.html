@@ -14,6 +14,7 @@
 <ul>
     {% for c in captures %}
         <li>{{c.name}} <a href='/{{c.name}}'>Show</a></li>
+		<li>size : {{c.get_packets_count()}}
     {% endfor %}
 </ul>
 
