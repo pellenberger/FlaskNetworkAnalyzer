@@ -1,0 +1,39 @@
+  0.000000 fe80::5425:836d:cb34:a753 -> ff02::1:ff20:45f0 ICMPv6 86 Neighbor Solicitation for fe80::282f:a347:8b20:45f0 from 00:50:56:c0:00:08
+  0.000047 fe80::5425:836d:cb34:a753 -> ff02::1:ff64:552c ICMPv6 86 Neighbor Solicitation for fe80::c091:9458:b664:552c from 00:50:56:c0:00:08
+  1.001035 fe80::5425:836d:cb34:a753 -> ff02::1:ff20:45f0 ICMPv6 86 Neighbor Solicitation for fe80::282f:a347:8b20:45f0 from 00:50:56:c0:00:08
+  1.001101 fe80::5425:836d:cb34:a753 -> ff02::1:ff64:552c ICMPv6 86 Neighbor Solicitation for fe80::c091:9458:b664:552c from 00:50:56:c0:00:08
+  1.004909 192.168.111.128 -> 192.168.111.2 DNS 76 Standard query 0x92d9  A daisy.ubuntu.com
+  1.025674 192.168.111.2 -> 192.168.111.128 DNS 108 Standard query response 0x92d9  A 91.189.92.57 A 91.189.92.55
+  2.379881 fe80::5425:836d:cb34:a753 -> ff02::c      SSDP 208 M-SEARCH * HTTP/1.1 
+  2.380463 fe80::5425:836d:cb34:a753 -> ff02::c      SSDP 208 M-SEARCH * HTTP/1.1 
+  2.385438 fe80::5425:836d:cb34:a753 -> ff02::c      SSDP 208 M-SEARCH * HTTP/1.1 
+  3.383435 192.168.111.128 -> 192.168.111.2 DNS 76 Standard query 0xbb98  A daisy.ubuntu.com
+  3.401702 192.168.111.2 -> 192.168.111.128 DNS 108 Standard query response 0xbb98  A 91.189.92.55 A 91.189.92.57
+  5.380751 fe80::5425:836d:cb34:a753 -> ff02::c      SSDP 208 M-SEARCH * HTTP/1.1 
+  5.381045 fe80::5425:836d:cb34:a753 -> ff02::c      SSDP 208 M-SEARCH * HTTP/1.1 
+  5.385866 fe80::5425:836d:cb34:a753 -> ff02::c      SSDP 208 M-SEARCH * HTTP/1.1 
+  6.015802 Vmware_02:9e:08 -> Vmware_f1:d8:1c ARP 42 Who has 192.168.111.2?  Tell 192.168.111.128
+  6.016183 Vmware_f1:d8:1c -> Vmware_02:9e:08 ARP 60 192.168.111.2 is at 00:50:56:f1:d8:1c
+  9.379810 fe80::5425:836d:cb34:a753 -> ff02::c      SSDP 208 M-SEARCH * HTTP/1.1 
+  9.380318 fe80::5425:836d:cb34:a753 -> ff02::c      SSDP 208 M-SEARCH * HTTP/1.1 
+  9.381308 fe80::5425:836d:cb34:a753 -> ff02::1:ff20:45f0 ICMPv6 86 Neighbor Solicitation for fe80::282f:a347:8b20:45f0 from 00:50:56:c0:00:08
+  9.381422 fe80::5425:836d:cb34:a753 -> ff02::1:ff64:552c ICMPv6 86 Neighbor Solicitation for fe80::c091:9458:b664:552c from 00:50:56:c0:00:08
+  9.385430 fe80::5425:836d:cb34:a753 -> ff02::c      SSDP 208 M-SEARCH * HTTP/1.1 
+ 10.000336 fe80::5425:836d:cb34:a753 -> ff02::1:ff20:45f0 ICMPv6 86 Neighbor Solicitation for fe80::282f:a347:8b20:45f0 from 00:50:56:c0:00:08
+ 10.000366 fe80::5425:836d:cb34:a753 -> ff02::1:ff64:552c ICMPv6 86 Neighbor Solicitation for fe80::c091:9458:b664:552c from 00:50:56:c0:00:08
+ 10.999973 fe80::5425:836d:cb34:a753 -> ff02::1:ff20:45f0 ICMPv6 86 Neighbor Solicitation for fe80::282f:a347:8b20:45f0 from 00:50:56:c0:00:08
+ 10.999996 fe80::5425:836d:cb34:a753 -> ff02::1:ff64:552c ICMPv6 86 Neighbor Solicitation for fe80::c091:9458:b664:552c from 00:50:56:c0:00:08
+ 12.379696 fe80::5425:836d:cb34:a753 -> ff02::c      SSDP 208 M-SEARCH * HTTP/1.1 
+ 12.380527 fe80::5425:836d:cb34:a753 -> ff02::c      SSDP 208 M-SEARCH * HTTP/1.1 
+ 12.386228 fe80::5425:836d:cb34:a753 -> ff02::c      SSDP 208 M-SEARCH * HTTP/1.1 
+ 15.381003 fe80::5425:836d:cb34:a753 -> ff02::c      SSDP 208 M-SEARCH * HTTP/1.1 
+ 15.381489 fe80::5425:836d:cb34:a753 -> ff02::c      SSDP 208 M-SEARCH * HTTP/1.1 
+ 15.388866 fe80::5425:836d:cb34:a753 -> ff02::c      SSDP 208 M-SEARCH * HTTP/1.1 
+ 17.629011 192.168.111.1 -> 192.168.111.255 DB-LSP-DISC 242 Dropbox LAN sync Discovery Protocol
+ 19.380839 fe80::5425:836d:cb34:a753 -> ff02::c      SSDP 208 M-SEARCH * HTTP/1.1 
+ 19.381632 fe80::5425:836d:cb34:a753 -> ff02::c      SSDP 208 M-SEARCH * HTTP/1.1 
+ 19.382943 fe80::5425:836d:cb34:a753 -> ff02::1:ff20:45f0 ICMPv6 86 Neighbor Solicitation for fe80::282f:a347:8b20:45f0 from 00:50:56:c0:00:08
+ 19.383203 fe80::5425:836d:cb34:a753 -> ff02::1:ff64:552c ICMPv6 86 Neighbor Solicitation for fe80::c091:9458:b664:552c from 00:50:56:c0:00:08
+ 19.385837 fe80::5425:836d:cb34:a753 -> ff02::c      SSDP 208 M-SEARCH * HTTP/1.1 
+ 20.001074 fe80::5425:836d:cb34:a753 -> ff02::1:ff20:45f0 ICMPv6 86 Neighbor Solicitation for fe80::282f:a347:8b20:45f0 from 00:50:56:c0:00:08
+ 20.001121 fe80::5425:836d:cb34:a753 -> ff02
