@@ -1,0 +1,10 @@
+{% extends "home.html" %}
+{% block current_capture %}
+
+<p>No capture is running...</p>
+
+<form action="/capture/start" method="post">
+	<input type="submit" value="New capture" />
+</form>
+
+{% endblock %}
