@@ -39,9 +39,10 @@ class Capture:
 			for line in file.readlines():
 				splitted = line.strip().split(' ')
 				try :
+					time = splitted[0]
 					src = splitted[1]
 					dst = splitted[3]
-					self.packets.append(Packet(src, dst))
+					self.packets.append(Packet(src, dst, time))
 				except :
 					pass				
 
