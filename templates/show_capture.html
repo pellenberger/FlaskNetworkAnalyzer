@@ -8,28 +8,34 @@
 
 <div id="packets">
 
-<input class="search" placeholder="Search" />
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<p>Search by <strong>time</strong>, <strong>source</strong> and <strong>destination</strong></p>
+			<br />
+			<input class="search" placeholder="Search" />
+		</div>
+	</div>	
 
-<table class="table table-condensed">	
-	<tr>
-		<th><strong>Time</strong></th>
-		<th><strong>Source</strong></th>
-		<th><strong>Destination</strong></th>
-	</tr>
-
-	<tbody class="list">
-
-		{% for p in capture.packets %}
+	<table class="table table-condensed">	
 		<tr>
-			<td>{{p.time}}</td>		
-			<td class="src">{{p.src}}</td>		
-			<td class="dst">{{p.dst}}</td>
+			<th><button class="sort btn btn-default" data-sort="time"><strong>Time</strong></button></th>
+			<th><button class="sort btn btn-default" data-sort="src"><strong>Source</strong></button></th>
+			<th><button class="sort btn btn-default" data-sort="dst"><strong>Destination</strong></button></th>
 		</tr>
-		{% endfor %}
 
-	</tbody>
+		<tbody class="list">
 
-</table>
+			{% for p in capture.packets %}
+			<tr>
+				<td class="time">{{p.time}}</td>		
+				<td class="src">{{p.src}}</td>		
+				<td class="dst">{{p.dst}}</td>
+			</tr>
+			{% endfor %}
+
+		</tbody>
+
+	</table>
 
 </div>
 

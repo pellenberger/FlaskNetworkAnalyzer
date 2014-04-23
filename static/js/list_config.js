@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
 	var options = {
-	  valueNames: ['src', 'dst']
+	  valueNames: ['time', 'src', 'dst']
 	};
 
 	var packetList = new List('packets', options);
