@@ -1,10 +1,36 @@
 {% extends "layout.html" %}
 {% block body %}
 
-<p>Here goes packets list...</p>
+<br />
+<a href="/" class="btn btn-primary">Back</a>
 
-{% for p in capture.packets %}
-    <li>{{p.src}} ---------- {{p.dst}}</li>
-{% endfor %}
+<h1>{{capture.name}}</h1>
+
+<div id="packets">
+
+<input class="search" placeholder="Search" />
+
+<table class="table table-condensed">	
+	<tr>
+		<th><strong>Time</strong></th>
+		<th><strong>Source</strong></th>
+		<th><strong>Destination</strong></th>
+	</tr>
+
+	<tbody class="list">
+
+		{% for p in capture.packets %}
+		<tr>
+			<td>{{p.time}}</td>		
+			<td class="src">{{p.src}}</td>		
+			<td class="dst">{{p.dst}}</td>
+		</tr>
+		{% endfor %}
+
+	</tbody>
+
+</table>
+
+</div>
 
 {% endblock %}
