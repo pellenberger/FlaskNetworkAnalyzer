@@ -1,7 +1,7 @@
 from subprocess import Popen
 from shutil import copyfile
 import time
-from os import listdir
+from os import listdir, remove
 from Packet import Packet
 from conf import INTERFACE
 
@@ -49,6 +49,9 @@ class Capture:
 
 	def get_packets_count(self):
 		return len(self.packets)
+
+	def delete(self):
+		remove('{0}/{1}'.format(LIST_CAPTURES_PATH, self.name))
 
 	@staticmethod
 	def get_list_captures():

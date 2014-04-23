@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # coding: utf-8
 
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for
 from environment import DEBUG
 from Capture import Capture
 app = Flask(__name__)
@@ -32,6 +32,12 @@ def stop_capture():
 @app.route('/<capture_name>', methods=['GET'])
 def show_capture(capture_name):
 	return render_template('show_capture.html', capture = Capture(capture_name))
+
+@app.route('/<capture_name>/delete', methods=['GET'])
+def delete_capture(capture_name):
+	Capture(capture_name).delete()
+	return index()
+	
 
 if __name__ == '__main__':
     app.run(debug=DEBUG) 

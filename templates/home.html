@@ -22,7 +22,7 @@
 	<tr>
 		<td>{{c.name}}</td> 
 		<td>{{c.get_packets_count()}}</td>
-		<td><a href='/{{c.name}}' class='btn btn-primary'>Show</a> <a href='#' class='btn btn-danger'>Delete</a></td>		
+		<td><a href='/{{c.name}}' class='btn btn-primary'>Show</a> <a href='/{{c.name}}/delete' class='btn btn-danger'>Delete</a></td>		
 	</tr>
     {% endfor %}
 </table>
