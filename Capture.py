@@ -51,7 +51,7 @@ class Capture:
 	@staticmethod
 	def get_list_captures():
 		captures = list()
-		filenames = listdir(LIST_CAPTURES_PATH)
+		filenames = sorted(listdir(LIST_CAPTURES_PATH), reverse=True)
 		for filename in filenames :
 			captures.append(Capture(filename))
 		return captures
