@@ -3,6 +3,7 @@ from shutil import copyfile
 import time
 from os import listdir
 from Packet import Packet
+from conf import INTERFACE
 
 CURRENT_CAPTURE_PATH = 'captures/current'
 LIST_CAPTURES_PATH = 'captures/list'
@@ -16,7 +17,7 @@ class Capture:
 			self.load_packets()
 
 	def start(self):
-		self.proc = Popen(['tshark', 'port', '80', '-N', 'n'], stdout=open(CURRENT_CAPTURE_PATH, 'w'))
+		self.proc = Popen(['tshark', 'port', '80', '-N', 'n', '-i', INTERFACE], stdout=open(CURRENT_CAPTURE_PATH, 'w'))
 		self.name = time.strftime('%d.%m.%Y %X')
 
 	def stop(self):
