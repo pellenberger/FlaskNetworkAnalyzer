@@ -1,10 +1,13 @@
 {% extends "home.html" %}
 {% block current_capture %}
 
-<p>Capture is running...</p>
+<p>
+	<img src="{{ url_for('static', filename = 'img/loader.gif') }}"/> 
+	Capture is running...
+</p>
 
-<form action="/capture/stop" method="post">
-	<input type="submit" value="Stop capture" />
+<form action="/capture/stop" method="post">	
+	<input type="submit" value="Stop capture" class="btn btn-danger" />
 </form>
 
 {% endblock %}

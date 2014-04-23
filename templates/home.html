@@ -1,21 +1,30 @@
 {% extends "layout.html" %}
 {% block body %}
 
-<h1>Home</h1>
+<h1>Current capture</h1>
 
-<p>Hello Flask !</p>
+<div class="panel panel-default">
+	<div class="panel-body">
+		{% block current_capture %}{% endblock %}
+	</div>
+</div>
 
-<h2>Current capture</h2>
+<br />
+<h1>List of captures</h1>
 
-{% block current_capture %}{% endblock %}
-
-<h2>List of captures</h2>
-
-<ul>
+<table class="table table-hover">
+	<tr>
+		<th><strong>Date</strong></th>
+		<th><strong># packets</strong></th>
+		<th><strong></strong></th>
+	</tr>
     {% for c in captures %}
-        <li>{{c.name}} <a href='/{{c.name}}'>Show</a></li>
-		<li>size : {{c.get_packets_count()}}
+	<tr>
+		<td>{{c.name}}</td> 
+		<td>{{c.get_packets_count()}}</td>
+		<td><a href='/{{c.name}}' class='btn btn-primary'>Show</a> <a href='#' class='btn btn-danger'>Delete</a></td>		
+	</tr>
     {% endfor %}
-</ul>
+</table>
 
 {% endblock %}
