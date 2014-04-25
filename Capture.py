@@ -5,8 +5,8 @@ from os import listdir, remove
 from Packet import Packet
 from conf import INTERFACE
 
-CURRENT_CAPTURE_PATH = 'captures/current'
-LIST_CAPTURES_PATH = 'captures/list'
+CURRENT_CAPTURE_PATH = './captures/current'
+LIST_CAPTURES_PATH = './captures/list'
 
 class Capture:
 	
