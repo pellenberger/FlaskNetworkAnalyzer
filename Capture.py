@@ -19,7 +19,7 @@ class Capture:
 			self.load_packets()
 
 	def start(self):
-		self.proc = Popen(['tshark', 'port', '80', '-N', 'n', '-i', INTERFACE], stdout=open(CURRENT_CAPTURE_PATH, 'w'))
+		self.proc = Popen(['tshark', '-N', 'n', '-i', INTERFACE], stdout=open(CURRENT_CAPTURE_PATH, 'w'))
 		self.name = time.strftime('%d.%m.%Y %X')
 
 	def stop(self):
@@ -53,7 +53,7 @@ class Capture:
 		return len(self.packets)
 
 	def delete(self):
-		remove('{0},{1}'.format(LIST_CAPTURES_PATH, self.name))
+		remove('{0}/{1}'.format(LIST_CAPTURES_PATH, self.name))
 
 	@staticmethod
 	def get_list_captures():
