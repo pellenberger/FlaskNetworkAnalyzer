@@ -10,7 +10,7 @@
 
 	<div class="panel panel-default">
 		<div class="panel-body">
-			<p>Search by <strong>time</strong>, <strong>source</strong> and <strong>destination</strong></p>
+			<p>Search by <strong>time</strong>, <strong>source</strong>, <strong>destination</strong> and <strong>protocole</strong></p>
 			<br />
 			<input class="search" placeholder="Search" />
 		</div>
@@ -21,6 +21,7 @@
 			<th><button class="sort btn btn-default" data-sort="time"><strong>Time</strong></button></th>
 			<th><button class="sort btn btn-default" data-sort="src"><strong>Source</strong></button></th>
 			<th><button class="sort btn btn-default" data-sort="dst"><strong>Destination</strong></button></th>
+			<th><button class="sort btn btn-default" data-sort="proto"><strong>Protocole</strong></button></th>
 		</tr>
 
 		<tbody class="list">
@@ -30,6 +31,7 @@
 				<td class="time">{{p.time}}</td>		
 				<td class="src">{{p.src}}</td>		
 				<td class="dst">{{p.dst}}</td>
+				<td class="proto">{{p.proto}}</td>
 			</tr>
 			{% endfor %}
 

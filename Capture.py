@@ -45,7 +45,8 @@ class Capture:
 					time = splitted[0]
 					src = splitted[1]
 					dst = splitted[3]
-					self.packets.append(Packet(src, dst, time))
+					proto = splitted[4]
+					self.packets.append(Packet(src, dst, time, proto))
 				except :
 					pass				
 
